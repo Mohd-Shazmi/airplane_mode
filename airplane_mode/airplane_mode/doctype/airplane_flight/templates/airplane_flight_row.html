@@ -1,0 +1,9 @@
+{% block page_content %}
+<h5>{{ doc.airplane }}</h5>
+<em>{{ doc.source_airport_code }} -> {{ doc.destination_airport_code }}</em><br />
+<em>{{ frappe.utils.format_date(doc.date_of_departure, "d MMMM, YYYY") }} | {{ doc.time_of_departure }} | {{ frappe.utils.format_duration(doc.duration) }}</em><br />
+<br />
+<a href="{{ doc.route }}" style="color: blue;">View Flight</a><br />
+<br /><br />
+{% endblock %}
+<!-- this is a sample default list template -->

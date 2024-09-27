@@ -1,0 +1,29 @@
+{
+ "cards": [
+  {
+   "card": "Number of Sales"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Revenue by IndiGo",
+   "width": "Half"
+  },
+  {
+   "chart": "Revenue by Airline Chart",
+   "width": "Half"
+  }
+ ],
+ "creation": "2024-09-24 15:59:19.167577",
+ "dashboard_name": "AirplaneMode",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2024-09-24 16:20:05.176155",
+ "modified_by": "Administrator",
+ "module": "airplane_mode",
+ "name": "AirplaneMode",
+ "owner": "Administrator"
+}

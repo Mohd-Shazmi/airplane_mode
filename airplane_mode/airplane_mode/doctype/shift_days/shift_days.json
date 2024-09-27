@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2024-09-26 12:08:12.547800",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "week_section",
+  "mon",
+  "column_break_yfzc",
+  "tues",
+  "column_break_khex",
+  "wed",
+  "column_break_aqmg",
+  "thurs",
+  "column_break_rzsy",
+  "fri",
+  "column_break_adnl",
+  "sat",
+  "column_break_iery",
+  "sun"
+ ],
+ "fields": [
+  {
+   "fieldname": "week_section",
+   "fieldtype": "Section Break",
+   "label": "Week"
+  },
+  {
+   "default": "0",
+   "fieldname": "mon",
+   "fieldtype": "Check",
+   "label": "Mon"
+  },
+  {
+   "fieldname": "column_break_yfzc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "tues",
+   "fieldtype": "Check",
+   "label": "Tues"
+  },
+  {
+   "fieldname": "column_break_khex",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "wed",
+   "fieldtype": "Check",
+   "label": "Wed"
+  },
+  {
+   "fieldname": "column_break_aqmg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "thurs",
+   "fieldtype": "Check",
+   "label": "Thurs"
+  },
+  {
+   "fieldname": "column_break_rzsy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "fri",
+   "fieldtype": "Check",
+   "label": "Fri"
+  },
+  {
+   "fieldname": "column_break_adnl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "sat",
+   "fieldtype": "Check",
+   "label": "Sat"
+  },
+  {
+   "fieldname": "column_break_iery",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "sun",
+   "fieldtype": "Check",
+   "label": "Sun"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-26 17:28:31.021421",
+ "modified_by": "Administrator",
+ "module": "airplane_mode",
+ "name": "Shift Days",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

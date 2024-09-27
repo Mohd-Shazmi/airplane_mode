@@ -1,0 +1,212 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "creation": "2024-09-19 15:00:54.374193",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_x8dt",
+  "airplane",
+  "status",
+  "amended_from",
+  "column_break_ynob",
+  "date_of_departure",
+  "time_of_departure",
+  "duration",
+  "section_break_kiqw",
+  "current_capacity",
+  "column_break_ncjq",
+  "flight_capacity",
+  "section_break_gybo",
+  "source_airport",
+  "source_airport_code",
+  "column_break_tvrd",
+  "destination_airport",
+  "destination_airport_code",
+  "section_break_odax",
+  "crew_members",
+  "section_break_girl",
+  "is_published",
+  "column_break_yybc",
+  "route"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_x8dt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Airplane Flight",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "airplane",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Airplane",
+   "options": "Airplane",
+   "reqd": 1
+  },
+  {
+   "default": "Scheduled",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Scheduled\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "column_break_ynob",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_departure",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Departure",
+   "reqd": 1
+  },
+  {
+   "fieldname": "time_of_departure",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Time of Departure",
+   "reqd": 1
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "in_list_view": 1,
+   "label": "Duration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_gybo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "source_airport",
+   "fieldtype": "Link",
+   "label": "Source Airport",
+   "options": "Airport",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "source_airport.code",
+   "fieldname": "source_airport_code",
+   "fieldtype": "Data",
+   "label": "Source Airport Code"
+  },
+  {
+   "fieldname": "column_break_tvrd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "destination_airport",
+   "fieldtype": "Link",
+   "label": "Destination Airport",
+   "options": "Airport",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "destination_airport.code",
+   "fieldname": "destination_airport_code",
+   "fieldtype": "Data",
+   "label": "Destination Airport Code"
+  },
+  {
+   "fieldname": "section_break_girl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published"
+  },
+  {
+   "fieldname": "column_break_yybc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "section_break_kiqw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "current_capacity",
+   "fieldtype": "Int",
+   "label": "Current Capacity",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "column_break_ncjq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "airplane.capacity",
+   "fieldname": "flight_capacity",
+   "fieldtype": "Int",
+   "label": "Flight Capacity",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "section_break_odax",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "crew_members",
+   "fieldtype": "Table",
+   "label": "Crew Members",
+   "options": "Site Shift Child"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Airplane Ticket",
+   "link_fieldname": "flight"
+  }
+ ],
+ "modified": "2024-09-27 13:48:24.361277",
+ "modified_by": "Administrator",
+ "module": "airplane_mode",
+ "name": "Airplane Flight",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "route": "flights",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "airplane",
+ "track_changes": 1
+}

@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{DD}-{MM}-{YY}-{shop}",
+ "creation": "2024-09-27 11:12:58.756492",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_cjs6",
+  "shop",
+  "payment_amount",
+  "column_break_npqq",
+  "tenant",
+  "contract",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_cjs6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Shop Rent Payment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "shop",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Shop",
+   "options": "Airport Shops",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_npqq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "shop.tenant",
+   "fieldname": "tenant",
+   "fieldtype": "Data",
+   "label": "Tenant",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "contract.rent_amount",
+   "fieldname": "payment_amount",
+   "fieldtype": "Currency",
+   "label": "Payment Amount",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "shop.contract",
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Contract",
+   "options": "Shop Rental Contract",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-27 11:35:57.146780",
+ "modified_by": "Administrator",
+ "module": "airport shop management",
+ "name": "Shop Rent Payment",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,4 +1,4 @@
-app_name = "airplane_mode"
+filesapp_name = "airplane_mode"
 app_title = "airplane_mode"
 app_publisher = "Shazam"
 app_description = "Switch to airplane mode in airplane"
@@ -148,7 +148,7 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
 # 	"all": [
 # 		"airplane_mode.tasks.all"
 # 	],
@@ -161,10 +161,10 @@ app_license = "mit"
 # 	"weekly": [
 # 		"airplane_mode.tasks.weekly"
 # 	],
-# 	"monthly": [
-# 		"airplane_mode.tasks.monthly"
-# 	],
-# }
+ 	"monthly": [
+ 		"airport_shop_management.schedule.send_shop_rent_reminder_email"
+ 	]
+}
 
 # Testing
 # -------

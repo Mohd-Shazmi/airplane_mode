@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle Example</title>
+</head>
+<body>
+
+    <script>
+        // Function to get query parameters from the URL
+        function getQueryParams(param) {
+            let urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Function to create and append a rectangle to the body
+        function createRectangle() {
+            // Create a new div element
+            var rectangle = document.createElement("div");
+
+            var color = getQueryParams("color");
+
+            // Add styles to the rectangle
+            rectangle.style.width = "800px";
+            rectangle.style.height = "400px";
+            rectangle.style.backgroundColor = color ? color : "black";
+            rectangle.style.border = "2px solid black";
+            rectangle.style.marginTop = "20px";
+
+            // Append the rectangle directly to the body
+            document.body.appendChild(rectangle);
+        }
+
+        // Automatically create the rectangle when the page loads
+        window.onload = createRectangle;
+    </script>
+
+</body>
+</html>

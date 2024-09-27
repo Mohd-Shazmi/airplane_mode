@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2024-09-16 14:43:20.153318",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "city",
+  "country",
+  "column_break_wonp",
+  "code",
+  "shops_section",
+  "number_of_shops",
+  "column_break_zmnw",
+  "leased",
+  "available"
+ ],
+ "fields": [
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Code ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "City",
+   "reqd": 1
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_wonp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shops_section",
+   "fieldtype": "Section Break",
+   "label": "Shops"
+  },
+  {
+   "default": "0",
+   "fieldname": "number_of_shops",
+   "fieldtype": "Int",
+   "label": "Number of shops",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_zmnw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "leased",
+   "fieldtype": "Int",
+   "label": "Leased",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "available",
+   "fieldtype": "Int",
+   "label": "Available",
+   "non_negative": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-27 11:07:53.489803",
+ "modified_by": "Administrator",
+ "module": "airplane_mode",
+ "name": "Airport",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-27 10:51:22.479727",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "contract_owner",
+  "rent_amount",
+  "column_break_gxwe",
+  "date_of_issue",
+  "date_of_expiry",
+  "section_break_bwou",
+  "signature_rpld"
+ ],
+ "fields": [
+  {
+   "fieldname": "contract_owner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Contract Owner",
+   "options": "Shop Tenants",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rent_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rent Amount",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_gxwe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_issue",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Issue",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_expiry",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Expiry",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_bwou",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "signature_rpld",
+   "fieldtype": "Signature"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-27 10:54:02.665907",
+ "modified_by": "Administrator",
+ "module": "airport shop management",
+ "name": "Shop Rental Contract",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
